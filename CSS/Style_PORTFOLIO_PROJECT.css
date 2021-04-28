@@ -19,8 +19,12 @@ COLOR PALETTE
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  background-color: #fdf7ef;
   color: #dd0e0e;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #fdf7ef;
 }
 
 /* ------------ HEADER ------------ */
@@ -75,6 +79,16 @@ a:hover {
   display: none;
 }
 
+.header {
+  height: 100vh;
+  background-image: url(../Links/Letra_07_Portfolio.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 1200px;
+}
+
 @media screen and (max-width: 1000px) {
   label.logo {
     font-size: 25px;
@@ -123,6 +137,13 @@ a:hover {
   }
 }
 
+.content {
+  width: 100%;
+  max-width: 1800px;
+  overflow: auto;
+  margin: auto;
+}
+
 /* ------------ BODY ------------ */
 
 /* ------------ BOTTOM/FOOTER ------------ */
@@ -164,25 +185,6 @@ a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-  .main {
-    margin-bottom: 40px;
-    margin-top: 20px;
-  }
-
-  .portfolio-intro {
-    font-size: 30px;
-  }
-
-  .img-gallery {
-    object-fit: cover;
-    width: 45%;
-    display: block;
-    margin-bottom: 15px;
-    cursor: pointer;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
   .footer {
     justify-content: center;
     text-align: center;
@@ -209,33 +211,6 @@ a:hover {
 }
 
 @media screen and (max-width: 800px) {
-  .main {
-    margin-bottom: 40px;
-    margin-top: 20px;
-  }
-
-  .portfolio-intro {
-    font-size: 25px;
-  }
-
-  .content-gallery {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 2em;
-  }
-
-  .img-gallery {
-    object-fit: cover;
-    width: 95%;
-    display: block;
-    margin-bottom: 15px;
-    cursor: pointer;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
   .copyright {
     font-size: 14px;
   }
