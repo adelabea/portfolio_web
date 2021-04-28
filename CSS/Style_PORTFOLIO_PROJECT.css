@@ -3,6 +3,7 @@ COLOR PALETTE
 #000000 - Black
 #FDF7EF - Pale Pink (background)
 #dd0e0e - Red
+#f1e7d8 - BG (beige)
 */
 
 /* ------------ GLOBAL STYLES ------------ */
@@ -115,41 +116,38 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
-}
-section {
-  background: url(bg1.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
+
+  section {
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
 }
 
 /* ------------ BODY ------------ */
 
 /* ------------ BOTTOM/FOOTER ------------ */
 
-footer {
+.footer {
   padding-bottom: 0.1px;
-  background: #f1e7d8;
-}
-
-.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 .copyright {
   font-weight: 400;
-  font-size: 14px;
-  padding: 0 40px;
+  font-size: 16px;
+  padding: 2em;
 }
 
 .social-media {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  padding: 2em;
 }
 
 .social-media-icon {
@@ -164,23 +162,36 @@ footer {
   font-size: 30px;
   line-height: 60px;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1000px) {
   .main {
     margin-bottom: 40px;
     margin-top: 20px;
   }
 
-  .img-galery {
-    width: 35%;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
+  .portfolio-intro {
+    font-size: 30px;
   }
 
-  .footer-content {
+  .img-gallery {
+    object-fit: cover;
+    width: 45%;
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footer {
     justify-content: center;
     text-align: center;
     display: flex;
     margin-bottom: 15px;
+  }
+
+  .copyright {
+    font-size: 14px;
   }
 
   .social-media {
@@ -197,28 +208,48 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .main {
     margin-bottom: 40px;
     margin-top: 20px;
   }
 
+  .portfolio-intro {
+    font-size: 25px;
+  }
+
+  .content-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2em;
+  }
+
   .img-gallery {
+    object-fit: cover;
     width: 95%;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .copyright {
+    font-size: 14px;
   }
 
   .social-media {
     width: 100%;
     justify-content: space-evenly;
+    padding: 2em;
   }
 
-  .footer-content {
+  .footer {
     justify-content: center;
     text-align: center;
     display: flex;
-    margin-bottom: 40px;
   }
 
   .social-media-icon {

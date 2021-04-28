@@ -3,6 +3,7 @@ COLOR PALETTE
 #000000 - Black
 #FDF7EF - Pale Pink (background)
 #dd0e0e - Red
+#f1e7d8 - BG (beige)
 */
 
 /* ------------ GLOBAL STYLES ------------ */
@@ -115,11 +116,11 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
-}
-section {
-  background: url(bg1.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
+
+  section {
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
 }
 
 /* ------------ BODY ------------ */
@@ -129,16 +130,21 @@ section {
   margin-top: 20px;
   overflow: hidden;
 }
+.content {
+  width: 100%;
+  max-width: 1800px;
+  overflow: auto;
+  margin: auto;
+}
 
 .portfolio-intro {
   font-family: "ITC Clearface Std";
   font-weight: 500;
   font-style: normal;
+  font-size: 40px;
   line-height: 1.4;
-  padding-top: 2em;
   text-align: center;
-  padding: 0 60px;
-  padding-bottom: 2em;
+  padding: 2em;
 }
 
 .highlight {
@@ -152,14 +158,15 @@ section {
 }
 
 .gallery {
-  background: #fdf7ef;
+  padding: 0;
 }
 
 .content-gallery {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 0 40px;
+  padding: 2em;
 }
 
 .img-gallery {
@@ -174,30 +181,27 @@ section {
 
 /* ------------ BOTTOM/FOOTER ------------ */
 
-footer {
+.footer {
   padding-bottom: 0.1px;
-  background: #f1e7d8;
-}
-
-.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 .copyright {
   font-weight: 400;
-  font-size: 14px;
-  padding: 0 40px;
+  font-size: 16px;
+  padding: 2em;
 }
 
 .social-media {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  padding: 2em;
 }
 
 .social-media-icon {
@@ -212,23 +216,44 @@ footer {
   font-size: 30px;
   line-height: 60px;
 }
+
 @media screen and (max-width: 1000px) {
   .main {
     margin-bottom: 40px;
     margin-top: 20px;
   }
 
-  .img-galery {
-    width: 50%;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
+  .portfolio-intro {
+    font-size: 30px;
   }
 
-  .footer-content {
+  /*.content-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2em;
+  } */
+
+  .img-gallery {
+    object-fit: cover;
+    width: 45%;
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footer {
     justify-content: center;
     text-align: center;
     display: flex;
     margin-bottom: 15px;
+  }
+
+  .copyright {
+    font-size: 14px;
   }
 
   .social-media {
@@ -251,22 +276,42 @@ footer {
     margin-top: 20px;
   }
 
+  .portfolio-intro {
+    font-size: 25px;
+  }
+
+  .content-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2em;
+  }
+
   .img-gallery {
+    object-fit: cover;
     width: 95%;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .copyright {
+    font-size: 14px;
   }
 
   .social-media {
     width: 100%;
     justify-content: space-evenly;
+    padding: 2em;
   }
 
-  .footer-content {
+  .footer {
     justify-content: center;
     text-align: center;
     display: flex;
-    margin-bottom: 40px;
   }
 
   .social-media-icon {
