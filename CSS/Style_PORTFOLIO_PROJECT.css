@@ -13,10 +13,11 @@ COLOR PALETTE
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  box-sizing: border-box;
 }
 
 html {
@@ -31,7 +32,6 @@ nav {
   height: 75px;
   width: 100%;
   align-items: baseline;
-  margin-bottom: 2em;
   color: #dd0e0e;
 }
 
@@ -48,6 +48,7 @@ nav ul {
   float: right;
   margin-right: 20px;
   text-decoration: none;
+
 }
 nav ul li {
   display: inline-block;
@@ -66,6 +67,7 @@ a:hover {
   transition: 0.5s;
   border-bottom: 0.2px;
 }
+
 .checkbtn {
   font-size: 25px;
   float: right;
@@ -98,6 +100,10 @@ a:hover {
   }
   nav ul li a {
     font-size: 25px;
+  }
+
+  .header {
+    max-height: 500px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -132,11 +138,14 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
+}
 
-  section {
-    background-size: cover;
-    height: calc(100vh - 80px);
-  }
+/* ------------ BODY ------------ */
+
+.main {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 .content {
@@ -146,7 +155,13 @@ a:hover {
   margin: auto;
 }
 
-/* ------------ BODY ------------ */
+.content-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .project_info {
   justify-content: center;
   align-items: center;
@@ -163,11 +178,10 @@ a:hover {
 
 .leftside,
 .rightside {
-  padding: 50px;
-  height: 250px;
-  width: 100%;
-  padding: 20px 0;
   text-align: center;
+  padding: 8px;
+  width: 100%;
+  margin: 0;
 }
 
 .leftside {
@@ -181,11 +195,11 @@ a:hover {
   color: #fdf7ef;
   background-color: #dd0e0e;
 }
-.client_name_title {
+.project_name_title {
   font-family: "ITC Clearface Std";
   font-weight: 500;
   font-style: normal;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 1.4;
   text-align: center;
 }
@@ -194,44 +208,132 @@ a:hover {
   font-family: "ITC Clearface Std";
   font-weight: 800;
   font-style: normal;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 1.4;
   text-align: center;
 }
 
-.description_project {
+.subtitle {
   padding: 0 4em;
   font-family: "ITC Clearface Std";
   font-weight: 500;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.4;
   text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+.client_name_title_one {
+  font-family: "ITC Clearface Std";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.client_name_title_two {
+  font-family: "ITC Clearface Std";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1.4;
+  text-align: center;
+  padding-top: 0.8em;
+}
+
+.client_subtitle {
+  padding: 0 4em;
+  font-family: "ITC Clearface Std";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* PHOTOPS */
+
+.gallery_project {
+  padding: 0;
+}
+
+.img-gallery_first {
+  object-fit: cover;
+  width: 33.33333%;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.img-gallery_second {
+  object-fit: cover;
+  width: 50%;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.img-gallery_third {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
   .leftside {
     width: 100%;
-    height: 30vh;
+    height: auto;
   }
 
   .rightside {
     width: 100%;
-    height: 30vh;
+    height: auto;
+  }
+
+  .project_name_title,
+  .name_project {
+    font-size: 30px;
+  }
+
+  .subtitle,
+  .client_subtitle {
+    font-size: 16px;
+  }
+
+  .client_name_title_one,
+  .client_name_title_two {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+
+  .content-gallery {
+    width: 100%;
+    height: auto;
   }
 }
 
 /* ------------ BOTTOM/FOOTER ------------ */
 
 .footer {
-  padding-bottom: 0.1px;
+  padding-top: 40px;
+  padding-bottom: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 40px;
-  padding-bottom: 0px;
-  color: #dd0e0e;
 }
 
 .copyright {
@@ -244,13 +346,12 @@ a:hover {
   width: 50%;
   display: flex;
   justify-content: flex-end;
-  padding: 2em;
 }
 
 .social-media-icon {
   display: inline-block;
-  margin-left: 20px;
-  width: 60px;
+  margin-left: 5px;
+  width: 120px;
   height: 60px;
   text-align: center;
   color: #dd0e0e;
@@ -271,7 +372,6 @@ a:hover {
 
   .copyright {
     font-size: 14px;
-    align-items: center;
   }
 
   .social-media {
@@ -296,7 +396,6 @@ a:hover {
   .social-media {
     width: 100%;
     justify-content: space-evenly;
-    padding: 2em;
   }
 
   .footer {

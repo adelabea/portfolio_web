@@ -18,12 +18,11 @@ COLOR PALETTE
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  box-sizing: border-box;
-  color: #dd0e0e;
 }
 
 html {
   scroll-behavior: smooth;
+  color: #dd0e0e;
   background-color: #fdf7ef;
 }
 
@@ -34,6 +33,7 @@ nav {
   width: 100%;
   align-items: baseline;
   margin-bottom: 2em;
+  color: #dd0e0e;
 }
 
 label.logo-adelabea {
@@ -49,7 +49,9 @@ nav ul {
   float: right;
   margin-right: 20px;
   text-decoration: none;
+  background-color: #fdf7ef;
 }
+
 nav ul li {
   display: inline-block;
   line-height: 80px;
@@ -59,6 +61,7 @@ nav ul li a {
   font-size: 25px;
   padding: 7px 13px;
   border-bottom: 4px;
+  color: #dd0e0e;
 }
 
 a:hover {
@@ -80,10 +83,14 @@ a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-  label.logo {
-    font-size: 25px;
-    padding-left: 50px;
+  .label.logo {
+    font-size: 20px;
   }
+
+  .logo-adelabea {
+    text-align: center;
+  }
+
   nav ul li a {
     font-size: 25px;
   }
@@ -120,10 +127,11 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
+}
 
-  section {
-    background-size: cover;
-    height: calc(100vh - 80px);
+@media screen and (max-width: 300px) {
+  .label.logo {
+    font-size: 10px;
   }
 }
 
@@ -183,48 +191,6 @@ a:hover {
   justify-content: space-evenly;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 350dd8d4334110fa21c9705cfb04d22212523f98
-/* ------------ BOTTOM/FOOTER ------------ */
-
-.footer {
-  padding-bottom: 0.1px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-top: 40px;
-  padding-bottom: 0px;
-}
-
-.copyright {
-  font-weight: 400;
-  font-size: 16px;
-  padding: 2em;
-}
-
-.social-media {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 2em;
-}
-
-.social-media-icon {
-  display: inline-block;
-  margin-left: 20px;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-}
-
-.social-media-icon i {
-  font-size: 30px;
-  line-height: 60px;
-}
-
 @media screen and (max-width: 1000px) {
   .main {
     margin-bottom: 40px;
@@ -235,14 +201,6 @@ a:hover {
     font-size: 30px;
   }
 
-  /*.content-gallery {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 2em;
-  } */
-
   .img-gallery {
     object-fit: cover;
     width: 45%;
@@ -251,30 +209,6 @@ a:hover {
     cursor: pointer;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
-
-  .footer {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    margin-bottom: 15px;
-  }
-
-  .copyright {
-    font-size: 14px;
-  }
-
-  .social-media {
-    width: 80%;
-    justify-content: space-evenly;
-  }
-
-  .social-media-icon {
-    margin-left: 0;
-  }
-
-  .social-media-icon i {
-    margin-left: 0;
   }
 }
 
@@ -305,7 +239,72 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+}
 
+/* ------------ BOTTOM/FOOTER ------------ */
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 2em;
+}
+
+.social-media {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin-left: 5px;
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  color: #dd0e0e;
+}
+
+.social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  .social-media {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+
+  .social-media-icon {
+    margin-left: 0;
+  }
+
+  .social-media-icon i {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .copyright {
     font-size: 14px;
   }
@@ -313,7 +312,6 @@ a:hover {
   .social-media {
     width: 100%;
     justify-content: space-evenly;
-    padding: 2em;
   }
 
   .footer {
