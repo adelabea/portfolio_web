@@ -25,6 +25,7 @@ html {
   color: #dd0e0e;
   background-color: #fdf7ef;
 }
+
 body {
   position: absolute;
   top: 50%;
@@ -34,18 +35,6 @@ body {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-
-/*
-body {
-  display: flex;
-  padding: 5em;
-  size: 100vh;
-  justify-content: center;
-  vertical-align: middle;
-  flex-direction: column;
-  align-items: center;
-  vertical-align: middle;
-}*/
 
 /* ------------ HEADER ------------ */
 
@@ -80,65 +69,45 @@ body {
 }
 
 /* ------------ BOTTOM/FOOTER ------------ */
-nav {
-  align-content: center;
-  text-align: center;
-}
 
 nav ul {
   text-decoration: none;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 10px;
+  display: inline-block;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 nav ul li a {
   font-size: 25px;
-  padding: 0 13px;
+  padding: 7px 25px;
+  border-bottom: 4px;
   color: #dd0e0e;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: #dd0e0e;
+  color: #fdf7ef;
   transition: 0.5s;
+  border-bottom: 0.2px;
 }
 
-@media screen and (max-width: 1000px) {
-  .checkbtn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
+/*@media screen and (max-width: 1000px) {
+  .label.logo {
+    font-size: 20px;
   }
 
-  nav ul li {
-    display: block;
-    margin: 60px 0;
-    line-height: 30px;
+  .logo-adelabea {
+    text-align: center;
   }
 
   nav ul li a {
-    font-size: 50px;
-    padding: 3px;
-  }
-
-  a:hover,
-  a.active {
-    background: none;
-  }
-  #check:checked ~ ul {
-    left: 0;
+    font-size: 25px;
   }
 }
-
 @media screen and (max-width: 800px) {
   .checkbtn {
     display: block;
@@ -172,39 +141,3 @@ a:hover {
     left: 0;
   }
 }
-
-/*
-
-@media screen and (max-width: 1000px) {
-  .intro {
-    font-size: 30px;
-    max-width: 60em;
-  }
-  ul {
-    max-width: 25em;
-    text-align: center;
-    padding: 2em;
-    display: inline-block;
-  }
-
-  nav ul li {
-    padding: 0.5em;
-  }
-  nav ul li a {
-    padding: 15px 20px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .intro {
-    font-size: 25px;
-  }
-
-  nav ul li {
-    display: grid;
-    padding: 0.5em;
-    text-align: center;
-    align-content: center;
-    font-size: 18px;
-  }
-}*/
