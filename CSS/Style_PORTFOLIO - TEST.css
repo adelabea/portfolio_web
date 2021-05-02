@@ -169,179 +169,52 @@ a:hover {
   margin-inline-end: 0em;
 }
 
-.content-gallery {
+.gallery {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 2em;
-  align-items: center;
+  margin: auto;
+  margin-bottom: 2em;
+  align-content: center;
+  justify-content: center;
 }
 
-a > .img-gallery {
-  object-fit: cover;
-  width: 33%;
+.gallery .content_gallery {
+  width: 32%;
   height: auto;
-  display: inline-block;
-  margin-bottom: 1.5em;
-  cursor: pointer;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.link-gallery:after {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/*
-.content-gallery .link-gallery a {
-  width: 50%;
-}
-
-.img-gallery {
-  object-fit: cover;
-  width: 33%;
-  height: auto;
-  display: block;
-  margin-bottom: 15px;
-  cursor: pointer;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}*/
-
-@media screen and (max-width: 1000px) {
-  .main {
-    margin-bottom: 40px;
-    margin-top: 20px;
-  }
-
-  .portfolio-intro {
-    font-size: 30px;
-  }
-
-  .img-gallery {
-    object-fit: cover;
-    width: 45%;
-    display: block;
-    margin-bottom: 15px;
-    cursor: pointer;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .main {
-    margin-bottom: 40px;
-    margin-top: 20px;
-  }
-
-  .portfolio-intro {
-    font-size: 25px;
-  }
-
-  .content-gallery {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 2em;
-  }
-
-  .img-gallery {
-    object-fit: cover;
-    width: 95%;
-    display: block;
-    margin-bottom: 15px;
-    cursor: pointer;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-}
-
-/* ------------ BOTTOM/FOOTER ------------ */
-
-.footer {
-  padding-top: 40px;
-  padding-bottom: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.copyright {
-  font-weight: 400;
-  font-size: 16px;
-  padding: 2em;
-}
-
-.social-media {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.social-media-icon {
-  display: inline-block;
-  margin-left: 5px;
-  width: 120px;
-  height: 60px;
+  overflow: hidden;
   text-align: center;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.gallery .content_gallery .photos {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}
+
+button {
+  font-family: "ITC Clearface Std";
+  font-weight: 400;
+  font-size: 25px;
+  width: 8em;
+  margin: 0.5em;
+  padding: 0.3em;
+  color: #ffffff;
+  background-color: #dd0e0e;
+  border: 1px solid #dd0e0e;
+  text-decoration: none;
+}
+
+button:hover {
   color: #dd0e0e;
+  background-color: #fdf7ef;
+  border: 1px solid #dd0e0e;
+  text-decoration: none;
 }
 
-.social-media-icon i {
-  font-size: 30px;
-  line-height: 60px;
-}
-
-@media screen and (max-width: 1000px) {
-  .footer {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    margin-bottom: 15px;
-  }
-
-  .copyright {
-    font-size: 14px;
-  }
-
-  .social-media {
-    width: 80%;
-    justify-content: space-evenly;
-  }
-
-  .social-media-icon {
-    margin-left: 0;
-  }
-
-  .social-media-icon i {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .copyright {
-    font-size: 14px;
-  }
-
-  .social-media {
-    width: 100%;
-    justify-content: space-evenly;
-  }
-
-  .footer {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-  }
-
-  .social-media-icon {
-    margin-left: 0;
-  }
+button:link {
+  color: #fdf7ef;
 }

@@ -169,27 +169,48 @@ a:hover {
   margin-inline-end: 0em;
 }
 
-.gallery {
-  padding: 0;
-}
-
 .content-gallery {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 2em;
+  align-items: center;
+}
+
+a > .img-gallery {
+  object-fit: cover;
+  width: 33%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.link-gallery:after {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*
+.content-gallery .link-gallery a {
+  width: 50%;
 }
 
 .img-gallery {
   object-fit: cover;
-  width: 32%;
+  width: 33%;
+  height: auto;
   display: block;
   margin-bottom: 15px;
   cursor: pointer;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
+}*/
 
 @media screen and (max-width: 1000px) {
   .main {
