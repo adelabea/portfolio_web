@@ -28,13 +28,10 @@ html {
 
 body {
   position: absolute;
-  top: 50%;
   left: 50%;
-  size: 100vh;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 15em;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
 /* ------------ HEADER ------------ */
@@ -42,7 +39,7 @@ body {
 .logo-adelabea {
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -52,10 +49,11 @@ body {
   font-family: "ITC Clearface Std";
   font-weight: 500;
   font-style: normal;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 1.4;
   text-align: center;
   padding: 2em;
+  min-width: 200px;
 }
 
 .highlight {
@@ -69,79 +67,78 @@ body {
 }
 
 /* ------------ BOTTOM/FOOTER ------------ */
-
-nav ul {
-  text-decoration: none;
+nav {
+  align-content: center;
   text-align: center;
 }
 
-nav ul li {
-  display: inline-block;
+nav ul {
+  text-decoration: none;
 }
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
 nav ul li a {
-  font-size: 35px;
-  padding: 7px 60px;
-  border-bottom: 4px;
-  color: #dd0e0e;
+  font-family: "ITC Clearface Std";
+  font-weight: 400;
+  font-size: 30px;
+  width: 8em;
+  margin: 1.5em;
+  text-decoration: none;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #dd0e0e;
+  border: 1px solid #dd0e0e;
 }
 
 a:hover {
-  text-decoration: none;
-  background-color: #dd0e0e;
-  color: #fdf7ef;
-  transition: 0.5s;
-  border-bottom: 0.2px;
+  color: #dd0e0e;
+  background-color: #fdf7ef;
+  border: 1px solid #dd0e0e;
 }
 
 @media screen and (max-width: 1100px) {
   .intro {
-    font-size: 30px;
-    padding: 2em;
-    min-width: 5em;
-  }
-
-  nav ul li a {
-    font-size: 25px;
-    padding: 7px 60px;
-    border-bottom: 4px;
-    color: #dd0e0e;
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 800px) {
+  .logo-adelabea {
+    font-size: 35px;
+  }
+
   .intro {
-    font-size: 25px;
-    padding: 2em;
-    min-width: 5em;
+    font-size: 30px;
+  }
+
+  .header {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
   }
 
   nav ul li a {
     font-size: 20px;
-    padding: 7px 60px;
-    border-bottom: 4px;
-    color: #dd0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
   }
 }
 
 @media screen and (max-width: 500px) {
   .logo-adelabea {
-    font-weight: 400;
-    font-style: normal;
     font-size: 30px;
-    text-align: center;
   }
-
   .intro {
-    font-size: 18px;
-    padding: 2em;
-    min-width: 5em;
-  }
-
-  nav ul li a {
-    margin-top: 3em;
-    font-size: 20px;
-    padding: 7px 60px;
-    border-bottom: 4px;
-    color: #dd0e0e;
+    font-size: 25px;
   }
 }

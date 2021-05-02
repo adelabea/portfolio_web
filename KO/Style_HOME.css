@@ -28,23 +28,14 @@ html {
 
 body {
   position: absolute;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-
-/*
-body {
-  display: flex;
-  padding: 5em;
+  left: 50%;
   size: 100vh;
-  justify-content: center;
-  vertical-align: middle;
-  flex-direction: column;
-  align-items: center;
-  vertical-align: middle;
-}*/
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 15em;
+}
 
 /* ------------ HEADER ------------ */
 
@@ -61,11 +52,10 @@ body {
   font-family: "ITC Clearface Std";
   font-weight: 500;
   font-style: normal;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1.4;
   text-align: center;
   padding: 2em;
-  min-width: 200px;
 }
 
 .highlight {
@@ -79,55 +69,79 @@ body {
 }
 
 /* ------------ BOTTOM/FOOTER ------------ */
-nav {
-  align-content: center;
-  text-align: center;
-}
 
 nav ul {
   text-decoration: none;
+  text-align: center;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 10px;
+  display: inline-block;
 }
-
 nav ul li a {
-  font-size: 30px;
-  padding: 35px;
+  font-size: 35px;
+  padding: 7px 60px;
+  border-bottom: 4px;
   color: #dd0e0e;
 }
 
 a:hover {
-  color: #fdf7ef;
+  text-decoration: none;
   background-color: #dd0e0e;
+  color: #fdf7ef;
   transition: 0.5s;
+  border-bottom: 0.2px;
 }
 
 @media screen and (max-width: 1100px) {
   .intro {
-    font-size: 40px;
+    font-size: 30px;
+    padding: 2em;
+    min-width: 5em;
   }
 
   nav ul li a {
     font-size: 25px;
-    margin: 30px;
+    padding: 7px 60px;
+    border-bottom: 4px;
     color: #dd0e0e;
   }
 }
 
 @media screen and (max-width: 800px) {
   .intro {
-    font-size: 30px;
+    font-size: 25px;
+    padding: 2em;
+    min-width: 5em;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    padding: 7px 60px;
+    border-bottom: 4px;
+    color: #dd0e0e;
   }
 }
 
 @media screen and (max-width: 500px) {
   .logo-adelabea {
+    font-weight: 400;
+    font-style: normal;
     font-size: 30px;
+    text-align: center;
   }
+
   .intro {
-    font-size: 25px;
+    font-size: 18px;
+    padding: 2em;
+    min-width: 5em;
+  }
+
+  nav ul li a {
+    margin-top: 3em;
+    font-size: 20px;
+    padding: 7px 60px;
+    border-bottom: 4px;
+    color: #dd0e0e;
   }
 }

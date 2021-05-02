@@ -142,168 +142,123 @@ a:hover {
   margin-top: 20px;
   overflow: hidden;
 }
-
 .content {
   width: 100%;
   max-width: 1800px;
   overflow: auto;
-  margin-top: 20em;
-  margin-bottom: 20em;
+  margin: auto;
 }
 
-a:link,
-a:visited {
-  color: #dd0e0e;
-}
-
-.contact_info {
-  justify-content: center;
-  align-items: center;
-}
-
-.content_contact {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.lleftside_contact,
-.rightside_contact {
-  text-align: center;
-  padding: 8px;
-  width: 100%;
-  margin: 0;
-}
-
-.leftside_contact {
-  width: 50%;
-}
-
-.rightside_contact {
-  width: 50%;
-}
-.contact_specs {
+.portfolio-intro {
   font-family: "ITC Clearface Std";
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  font-size: 35px;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.contact_sentence {
-  text-align: center;
-  align-items: center;
-  margin: 6em;
-}
-
-.contact_intro,
-.contact_sub {
   font-size: 40px;
-  padding: 0.2em;
+  line-height: 1.4;
+  text-align: center;
+  padding: 2em;
 }
 
-.contact_intro {
-  font-weight: 400;
+.highlight {
+  font-family: "ITC Clearface Std";
+  font-weight: 900;
+  font-style: normal;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0em;
+  margin-inline-end: 0em;
 }
 
-.contact_sub {
-  font-weight: 600;
-}
-
-/* FORM */
-
-.grid_contact {
+.content-gallery {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  position: relative;
-  flex-direction: column;
-  align-content: center;
-  margin-bottom: 3em;
+  padding: 2em;
+  align-items: center;
 }
 
-.contact_form {
-  font-family: "ITC Clearface Std";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-  color: #dd0e0e;
-  line-height: 1.6;
-  text-align: center;
-  background: transparent;
-  border-bottom: solid 1px;
+a > .img-gallery {
+  object-fit: cover;
+  width: 33%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-input,
-textarea {
-  font-size: 18px;
-  padding: 15px;
+.link-gallery:after {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*
+.content-gallery .link-gallery a {
+  width: 50%;
+}
+
+.img-gallery {
+  object-fit: cover;
+  width: 33%;
+  height: auto;
   display: block;
-  width: 55%;
-  border: none;
-  border-bottom: 1px;
-  resize: none;
-}
+  margin-bottom: 15px;
+  cursor: pointer;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}*/
 
-textarea {
-  overflow: scroll;
-  color: #dd0e0e;
-  font-size: 20px;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #dd0e0e;
-}
-
-.button {
-  font-family: "ITC Clearface Std";
-  font-weight: 800;
-  font-size: 20px;
-  width: 8em;
-  margin: 1.5em;
-  text-decoration: none;
-  padding: 10px;
-  color: #ffffff;
-  background-color: #dd0e0e;
-  border: 1px solid #dd0e0e;
-}
-
-.button:hover {
-  color: #dd0e0e;
-  background-color: #fdf7ef;
-  border: 1px solid #dd0e0e;
-}
-
-@media screen and (max-width: 500px) {
-  .contact_info {
-    margin-top: 1em;
-    margin-bottom: 1em;
+@media screen and (max-width: 1000px) {
+  .main {
+    margin-bottom: 40px;
+    margin-top: 20px;
   }
 
-  .content {
-    margin: 1em;
-  }
-  .leftside_contact {
-    width: 100%;
+  .portfolio-intro {
+    font-size: 30px;
   }
 
-  .rightside_contact {
-    width: 100%;
+  .img-gallery {
+    object-fit: cover;
+    width: 45%;
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
-  .contact_specs {
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .portfolio-intro {
     font-size: 25px;
   }
 
-  .contact_intro,
-  .contact_sub {
-    font-size: 28px;
+  .content-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2em;
+  }
+
+  .img-gallery {
+    object-fit: cover;
+    width: 95%;
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 
