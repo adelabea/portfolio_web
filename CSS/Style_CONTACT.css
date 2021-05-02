@@ -110,8 +110,8 @@ a:hover {
 }
 
 @media screen and (max-width: 300px) {
-  .label.logo {
-    font-size: 10px;
+  label.logo-adelabea {
+    font-size: 28px;
   }
 }
 
