@@ -5,13 +5,7 @@ COLOR PALETTE
 #dd0e0e - Red
 #f1e7d8 - BG (beige)
 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
+
 
 /* ------------ HEADER ------------ */
 
@@ -288,6 +282,7 @@ a:hover {
   .client_name_title_two {
     font-size: 20px;
   }
+
 }
 
 @media screen and (max-width: 800px) {
