@@ -6,34 +6,6 @@ COLOR PALETTE
 #f1e7d8 - BG (beige)
 */
 
-/* ------------ GLOBAL STYLES ------------ */
-@font-face {
-  font-family: "ClearfaceStd-Regular", Georgia, "Times New Roman", Times, serif;
-  src: url(ClearfaceStd-Regular.ttf) format("truetype");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
-
-html {
-  scroll-behavior: smooth;
-  color: #dd0e0e;
-  background-color: #fdf7ef;
-}
-
-body {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-
 /* ------------ HEADER ------------ */
 
 .logo-adelabea {
@@ -44,6 +16,14 @@ body {
 }
 
 /* ------------ BODY ------------ */
+
+body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
 
 .intro {
   font-family: "ITC Clearface Std";
@@ -125,7 +105,7 @@ a:hover {
   }
 
   nav ul li a {
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,4 +121,7 @@ a:hover {
   .intro {
     font-size: 25px;
   }
+
+  nav ul li a {
+    font-size: 20px;
 }
