@@ -9,11 +9,7 @@ COLOR PALETTE
 /* ------------ HEADER ------------ */
 
 nav {
-  height: 75px;
-  width: 100%;
-  align-items: baseline;
   margin-bottom: 2em;
-  color: #dd0e0e;
 }
 
 label.logo-adelabea {

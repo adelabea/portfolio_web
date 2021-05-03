@@ -9,11 +9,7 @@ COLOR PALETTE
 /* ------------ HEADER ------------ */
 
 nav {
-  height: 75px;
-  width: 100%;
-  align-items: baseline;
   margin-bottom: 2em;
-  color: #dd0e0e;
 }
 
 label.logo-adelabea {
@@ -118,17 +114,7 @@ a:hover {
 /* ------------ BODY ------------ */
 
 .main {
-  margin-bottom: 20px;
-  margin-top: 20px;
   overflow: hidden;
-}
-
-.content {
-  width: 100%;
-  max-width: 1800px;
-  overflow: auto;
-  margin-top: 20em;
-  margin-bottom: 20em;
 }
 
 a:link,
@@ -150,12 +136,8 @@ a:visited {
   align-items: center;
 }
 
-.leftside_contact,
-.rightside_contact {
-  text-align: center;
-  padding: 8px;
-  width: 100%;
-  margin: 0;
+div ul li a {
+  font-size: 40px;
 }
 
 .leftside_contact {
@@ -165,12 +147,8 @@ a:visited {
 .rightside_contact {
   width: 50%;
 }
+
 .contact_specs {
-  font-family: "ITC Clearface Std";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 35px;
-  line-height: 1.6;
   text-align: center;
 }
 
@@ -261,6 +239,44 @@ textarea::placeholder {
   border: 1px solid #dd0e0e;
 }
 
+@media screen and (max-width: 1000px) {
+  div ul li a {
+    font-size: 35px;
+  }
+
+  .contact_intro,
+  .contact_sub {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div ul li a {
+    font-size: 25px;
+  }
+
+  div ul li a {
+    font-size: 40px;
+  }
+
+  .content_contact {
+    text-align: center;
+    align-items: center;
+  }
+
+  .leftside_contact {
+    width: 50%;
+  }
+
+  .rightside_contact {
+    width: 50%;
+  }
+  .contact_intro,
+  .contact_sub {
+    font-size: 35px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .contact_info {
     margin-top: 1em;
@@ -268,7 +284,7 @@ textarea::placeholder {
   }
 
   .content {
-    margin: 1em;
+    margin: 0.5em;
   }
   .leftside_contact {
     width: 100%;

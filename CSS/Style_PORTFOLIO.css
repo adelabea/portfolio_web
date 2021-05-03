@@ -9,11 +9,7 @@ COLOR PALETTE
 /* ------------ HEADER ------------ */
 
 nav {
-  height: 75px;
-  width: 100%;
-  align-items: baseline;
   margin-bottom: 2em;
-  color: #dd0e0e;
 }
 
 label.logo-adelabea {
@@ -119,16 +115,9 @@ a:hover {
 /* ------------ BODY ------------ */
 
 .main {
-  margin-bottom: 20px;
-  margin-top: 20px;
   overflow: hidden;
 }
-.content {
-  width: 100%;
-  max-width: 1800px;
-  overflow: auto;
-  margin: auto;
-}
+
 
 .portfolio-intro {
   font-family: "ITC Clearface Std";

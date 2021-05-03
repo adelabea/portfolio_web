@@ -9,11 +9,7 @@ COLOR PALETTE
 /* ------------ HEADER ------------ */
 
 nav {
-  height: 75px;
-  width: 100%;
-  align-items: baseline;
   margin-bottom: 2em;
-  color: #dd0e0e;
 }
 
 label.logo-adelabea {
@@ -134,9 +130,7 @@ a:hover {
   font-weight: 600;
   font-style: normal;
   font-size: 57px;
-  text-align: center;
   padding: 1.5em 0 0.5em 0em;
-  align-items: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -146,16 +140,12 @@ a:hover {
   font-weight: 500;
   font-style: normal;
   font-size: 40px;
-  line-height: 1.4;
-  text-align: center;
-  align-items: center;
 }
 
 .meter {
   font-family: "ITC Clearface Std";
   font-style: normal;
   font-size: 80px;
-  line-height: 1.4;
   text-align: center;
   padding: 0.3em;
 }
@@ -163,7 +153,6 @@ a:hover {
 .working {
   width: 25em;
   height: auto;
-  margin-top: 2em;
 }
 
 @media screen and (max-width: 1000px) {

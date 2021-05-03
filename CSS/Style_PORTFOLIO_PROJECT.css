@@ -5,21 +5,11 @@ COLOR PALETTE
 #dd0e0e - Red
 #f1e7d8 - BG (beige)
 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
 
 /* ------------ HEADER ------------ */
 
 nav {
-  height: 75px;
-  width: 100%;
-  align-items: baseline;
-  color: #dd0e0e;
+  margin-bottom: 2em;
 }
 
 label.logo-adelabea {
@@ -35,7 +25,6 @@ nav ul {
   float: right;
   margin-right: 20px;
   text-decoration: none;
-
 }
 nav ul li {
   display: inline-block;
@@ -136,16 +125,7 @@ a:hover {
 /* ------------ BODY ------------ */
 
 .main {
-  margin-bottom: 20px;
-  margin-top: 20px;
   overflow: hidden;
-}
-
-.content {
-  width: 100%;
-  max-width: 1800px;
-  overflow: auto;
-  margin: auto;
 }
 
 .content-gallery {
@@ -155,26 +135,11 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.project_info {
-  justify-content: center;
-  align-items: center;
-}
-
 .content_project {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.leftside,
-.rightside {
-  text-align: center;
-  padding: 8px;
-  width: 100%;
-  margin: 0;
 }
 
 .leftside {
@@ -187,6 +152,7 @@ a:hover {
   width: 35%;
   color: #fdf7ef;
   background-color: #dd0e0e;
+  padding: 1.5em;
 }
 
 .project_name_title {
@@ -212,7 +178,7 @@ a:hover {
   font-family: "ITC Clearface Std";
   font-weight: 500;
   font-style: normal;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.4;
   text-align: center;
 }
@@ -241,7 +207,7 @@ a:hover {
   font-family: "ITC Clearface Std";
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4;
   text-align: center;
 }
@@ -277,40 +243,41 @@ a:hover {
   justify-content: space-evenly;
 }
 
-}
-
-@media screen and (max-width: 1000px) {
-  .project_name_title,
-  .name_project {
-    font-size: 30px;
-  }
-
-  .subtitle,
-  .client_subtitle {
-    font-size: 16px;
-  }
-
-  .client_name_title_one,
-  .client_name_title_two {
-    font-size: 20px;
-  }
-}
-
 @media screen and (max-width: 800px) {
+  .leftside {
+    width: 100%;
+    padding: 1.5em;
+  }
 
-.leftside {
-  width: 100%;
-}
-
-.rightside {
-  width: 100%;
-}
+  .rightside {
+    width: 100%;
+    padding: 1.5em;
+  }
 
   .img-gallery_first,
   .img-gallery_second,
-  .img-gallery_third{
+  .img-gallery_third {
     width: 100%;
     height: auto;
   }
 }
 
+@media screen and (max-width: 400px) {
+  .project_name_title {
+    font-size: 40px;
+  }
+
+  .name_project {
+    font-size: 35px;
+  }
+
+  .subtitle,
+  .client_name_title_one,
+  .client_name_title_two {
+    font-size: 22px;
+  }
+
+  .client_subtitle {
+    font-size: 16px;
+  }
+}
