@@ -55,7 +55,7 @@ a:hover {
   border-bottom: 0.2px;
 }
 
-.checkbtn {
+.checkboton {
   font-size: 25px;
   float: right;
   line-height: 80px;
@@ -95,7 +95,7 @@ a:hover {
 }
 
 @media screen and (max-width: 800px) {
-  .checkbtn {
+  .checkboton {
     display: block;
   }
   ul {

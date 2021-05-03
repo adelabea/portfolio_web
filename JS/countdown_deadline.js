@@ -30,4 +30,4 @@ const countdown = (deadline,elem,finalMessage) => {
   }, 1000)
 };
 
-countdown('Jun 15 2021 00:00:01 GMT+0100', 'clock', 'Here is my shop!');
+countdown('Jun 15 2021 00:00:01 GMT+0100', 'meter', 'Welcome to my shop!');
