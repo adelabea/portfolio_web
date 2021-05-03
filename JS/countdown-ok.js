@@ -16,8 +16,22 @@ return {
   remainDays
 }
 
-funtion countdown(deadline, elem, finalMessage) {
-cont el = document.getElementById(elem);
+const countdown = (deadline, elem, finalMessage) => {
+  const el = document.getElementById(elem);
+
+  const timerUpdate = setInterval( () => {
+    let t = getRemainTime(deadline);
+    el.innerHTML = `${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}s`;
+
+    if (t.remainTime <= 1) {
+      clearInterval(timerUpdate)
+      el.innerHTML = finalMessage
+    }
+  }, 1000)
+
+
+//function countdown(deadline, element, finalMessage) {
+//cont element = document.getElementById(elem);
 
 const timerUpdate = setInterval(() => {
   let t = getRemainTime(deadline);

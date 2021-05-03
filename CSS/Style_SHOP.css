@@ -114,6 +114,8 @@ a:hover {
   }
 }
 
+/* ------------ BODY ------------ */
+
 .content {
   width: 100%;
   max-width: 1800px;
@@ -141,5 +143,34 @@ a:hover {
   margin-inline-end: 0em;
 }
 
+.counter {
+  font-family: "ITC Clearface Std";
+  font-style: normal;
+  font-size: 80px;
+  line-height: 1.4;
+  text-align: center;
+  padding: 1em;
+}
+
 .clock {
+  line-height: 1.4;
+  text-align: center;
+  padding: 1em;
+  font-size: 60px;
+}
+
+.clock > div {
+  font-family: "ITC Clearface Std";
+  font-style: normal;
+  font-size: 80px;
+  display: inline-block;
+  padding: 1em;
+}
+
+.clock div > span {
+  border-radius: 3px;
+}
+
+.subtitle {
+  font-size: 25px;
 }
