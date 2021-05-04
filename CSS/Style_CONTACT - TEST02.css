@@ -113,10 +113,6 @@ a:hover {
 
 /* ------------ BODY ------------ */
 
-.main {
-  overflow: hidden;
-}
-
 a:link,
 a:visited {
   color: #dd0e0e;
@@ -137,7 +133,7 @@ a:visited {
 }
 
 div ul li a {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .leftside_contact {
@@ -173,44 +169,54 @@ div ul li a {
 }
 
 /* FORM */
-.grid_contact {
-  width: 100vh;
-  text-align: center;
-}
 
-.contact_form {
+form {
   font-family: "ITC Clearface Std";
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
-  color: #dd0e0e;
-  line-height: 1.6;
   text-align: center;
-  align-content: center;
-  background: transparent;
-  border-bottom: solid 1.8px;
-  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-input,
-textarea {
+form .grids {
+  margin: 2em;
+}
+
+input {
+  background-color: #ffffffa5;
+  color: #b89292;
   font-size: 18px;
-  padding: 15px;
-  width: 55%;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
   border: none;
-  border-bottom: 1px;
-  resize: none;
-}
-
-textarea {
+  border-bottom: 1.9px solid #dd0e0e;
+  text-align: center;
   overflow: scroll;
-  color: #dd0e0e;
-  font-size: 20px;
 }
 
-input::placeholder,
-textarea::placeholder {
+input:focus {
+  outline: none;
   color: #dd0e0e;
+}
+
+div div label {
+  color: #dd0e0e;
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+.warnings {
+  width: 30em;
+  text-align: center;
+  margin: auto;
+  color: #4b4b4b;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
 }
 
 .button {
@@ -232,10 +238,14 @@ textarea::placeholder {
   border: 1px solid #dd0e0e;
 }
 
-.warnings {
-  width: 200px;
-  text-align: center;
-  margin: auto;
-  color: #b06ab3;
-  padding-top: 20px;
+@media screen and (max-width: 1000px) {
+  div ul li a {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div ul li a {
+    font-size: 16px;
+  }
 }
