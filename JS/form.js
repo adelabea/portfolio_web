@@ -35,6 +35,10 @@ form.addEventListener("submit", e=>{
     if(get){
         any.innerHTML = warnings
     }else{
-        any.innerHTML = "Enquiry Sent"
+        any.innerHTML = "🎉 Enquiry Sent. Thank you 🎉"
     }
+
+
+    //const form = document.getElementById("form").reset();
+    
 })

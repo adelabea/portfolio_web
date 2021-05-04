@@ -75,6 +75,7 @@ a:hover {
   .checkboton {
     display: block;
   }
+
   ul {
     position: fixed;
     width: 100%;
@@ -107,7 +108,7 @@ a:hover {
 
 @media screen and (max-width: 300px) {
   label.logo-adelabea {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 
@@ -134,6 +135,7 @@ a:visited {
 
 div ul li a {
   font-size: 35px;
+  width: 100%;
 }
 
 .leftside_contact {
@@ -151,7 +153,7 @@ div ul li a {
 .contact_sentence {
   text-align: center;
   align-items: center;
-  margin: 6em;
+  margin: 4em;
 }
 
 .contact_intro,
@@ -239,23 +241,40 @@ div div label {
 }
 
 @media screen and (max-width: 1000px) {
-  div ul li a {
-    font-size: 30px;
+  .contact_specs li {
+    margin-top: 1em;
   }
 
   .contact_intro,
   .contact_sub {
-    font-size: 35px;
+    font-size: 30px;
+  }
+
+  .leftside_contact {
+    width: 100%;
+    align-content: center;
+  }
+
+  .rightside_contact {
+    width: 100%;
+    align-content: center;
   }
 }
 
 @media screen and (max-width: 800px) {
-  div ul li a {
-    font-size: 20px;
-  }
-
   .contact_intro,
   .contact_sub {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact_intro,
+  .contact_sub {
+    font-size: 25px;
+  }
+
+  input {
+    font-size: 16px;
   }
 }
